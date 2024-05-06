@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+</head>
+<body>
+{{> partials/navbar}}
+    
+<div class="container">
+<main class="my-5">
+    
+    <!-- CONTACT FORM -->
+
+    <section id="contact-form">
+        <h2>Contact Form</h2>
+
+        <form
+            name="contactform"
+            action="mailto:email@address.com"
+            method="post"
+        >
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                        />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="email@address.com"/>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message">Message</label>
+                <textarea
+                    class="form-control"
+                    id="message"
+                    rows="6"
+                ></textarea>
+            </div>
+            <button
+                type="submit"
+                class="btn btn-primary"
+            >
+                Submit <i class="bi bi-send"></i>
+            </button>
+        </form>
+    </section>
+    
+</main>
+</div>
+
+{{> partials/footer}}
+</body>
+</html>

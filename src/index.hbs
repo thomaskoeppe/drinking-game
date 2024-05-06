@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+</head>
+
+<body class="gradient">
+    <div class="container-sm py-4 px-3 mx-auto h-100 d-flex align-items-center justify-content-center">
+        <div class="card col-12 col-md-8 col-lg-6 border-0">
+            <div class="card-body">
+                <h5 class="card-title mb-4">New drinking game</h5>
+
+                <form>
+                    <div id="players" class="row g-2 mb-4">
+                        <div class="col-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Player" aria-label="Player" aria-describedby="button-player1">
+                                <button class="btn btn-outline-dark" type="button" id="button-player1" disabled><i class="bi bi-person-x"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="input-group">
+                                <input type="text" name="player2" class="form-control" placeholder="Player" aria-label="Player" aria-describedby="button-player2">
+                                <button class="btn btn-outline-dark" type="button" id="button-player2" disabled><i class="bi bi-person-x"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark float-end">Start game</button>
+                    <button type="button" class="btn btn-outline-dark float-end me-2" onclick="addPlayerFormElement()"><i class="bi bi-person-add"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {{!-- {{> partials/footer}} --}}
+</body>
+
+</html>

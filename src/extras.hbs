@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+</head>
+<body>
+{{> partials/navbar}}
+    
+<div class="container">
+<main class="my-5">
+
+    <section id="tooltips" class="my-4">
+        <h3 class="mb-3">Tooltips</h3>
+
+        <button
+            type="button"
+            class="btn btn-secondary text-light"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Tooltip on top"
+        >
+            Tooltip on top
+        </button>
+        <button
+            type="button"
+            class="btn btn-secondary text-light"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Tooltip on right"
+        >
+            Tooltip on right
+        </button>
+        <button
+            type="button"
+            class="btn btn-secondary text-light"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="Tooltip on bottom"
+        >
+            Tooltip on bottom
+        </button>
+        <button
+            type="button"
+            class="btn btn-secondary text-light"
+            data-bs-toggle="tooltip"
+            data-bs-placement="left"
+            title="Tooltip on left"
+        >
+            Tooltip on left
+        </button>
+    </section>
+
+    <section id="popovers" class="my-4">
+        <h3 class="mb-3">Popover</h3>
+
+        <button
+            type="button"
+            class="btn btn-primary text-light"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Top popover"
+        >
+            Popover on top
+        </button>
+        <button
+            type="button"
+            class="btn btn-primary text-light"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="right"
+            data-bs-content="Right popover"
+        >
+            Popover on right
+        </button>
+        <button
+            type="button"
+            class="btn btn-primary text-light"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="Bottom popover"
+        >
+            Popover on bottom
+        </button>
+        <button
+            type="button"
+            class="btn btn-primary text-light"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="left"
+            data-bs-content="Left popover"
+        >
+            Popover on left
+        </button>
+    </section>
+
+    <section id="toasts" class="my-4">
+        <h4 class="mb-3">Toasts</h4>
+
+        <p>
+            You can use links or buttons to trigger toasts, as this boilerplate includes a small JS script
+            to handle this for you.
+        </p>
+        <p>
+            To use a button add the attributes <code>data-bs-toggle</code> and <code>data-bs-target</code> to it.<br>
+            &lt;button class="btn btn-secondary text-light" data-bs-toggle="toast" data-bs-target"#demoToastOne"&gt;...&lt;/button&gt;
+        </p>
+        <p>
+            To use a link add the attributes <code>data-bs-toggle</code> and <code>href</code> to it.<br>
+            &lt;a href="#demoToastOne" data-bs-toggle="toast"&gt;...&lt;/a&gt;
+        </p>
+
+        <button
+            type="button"
+            class="btn btn-dark text-light me-2"
+            data-bs-toggle="toast"
+            data-bs-target="#demoToastOne"
+        >
+            Show first toast
+        </button>
+
+        <a
+            data-bs-toggle="toast"
+            href="#demoToastTwo"
+        >
+            Show second toast
+        </a>
+    </section>
+
+    <div class="mb-5">&nbsp;</div>
+
+
+<!-- Toasts -->
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 1090">
+    <div class="toast-container position-static">
+
+        <!-- First toast -->
+        <div
+            id="demoToastOne"
+            class="toast text-bg-success"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+        >
+            <div class="toast-header">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>just now</small>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div><!-- /toast -->
+
+        <!-- Second toast -->
+        <div
+            id="demoToastTwo"
+            class="toast text-bg-danger"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+        >
+            <div class="toast-header">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>just now</small>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div><!-- /toast -->
+
+    </div><!-- /toast-container -->
+</div>
+    
+</main>
+</div>
+
+{{> partials/footer}}
+</body>
+</html>
