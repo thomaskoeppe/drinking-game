@@ -18,7 +18,7 @@ import RobotstxtPlugin from "robotstxt-webpack-plugin"
 const paths = [
   '/',
   '/about/',
-  '/extras/',
+  '/games/',
   '/contact/'
 ];
 
@@ -156,16 +156,6 @@ export default {
         'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
       },
-      filename: "extras/index.html",
-      template: path.resolve(process.cwd(), "./src/extras.hbs")
-    }),
-
-    new HtmlWebpackPlugin({
-      'meta': {
-        'charset': 'utf-8',
-        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
-        'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
-      },
       filename: "contact/index.html",
       template: path.resolve(process.cwd(), "./src/contact.hbs")
     }),
@@ -196,7 +186,6 @@ export default {
     watchFiles: [
       path.resolve(process.cwd(), "./src/index.hbs"),
       path.resolve(process.cwd(), "./src/about.hbs"),
-      path.resolve(process.cwd(), "./src/extras.hbs"),
       path.resolve(process.cwd(), "./src/contact.hbs"),
       path.resolve(process.cwd(), "./src/partials/header.hbs"),
       path.resolve(process.cwd(), "./src/partials/footer.hbs")

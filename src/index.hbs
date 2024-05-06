@@ -5,37 +5,68 @@
     <title>Home</title>
 </head>
 
-<body class="gradient">
-    <div class="container-sm py-4 px-3 mx-auto h-100 d-flex align-items-center justify-content-center">
-        <div class="card col-12 col-md-8 col-lg-6 border-0">
+<body class="gradient" style="overflow: hidden;">
+    <div class="container-sm py-4 px-3 mx-auto h-100 d-flex align-items-center justify-content-center flex-column">
+        <div class="card col-12 col-md-8 col-lg-6 border-0 bg-light" style="--bs-bg-opacity: .75;">
             <div class="card-body">
-                <h5 class="card-title mb-4">New drinking game</h5>
+                <h5 class="card-title mb-4 text-center"><i class="bi bi-cup-straw"></i> Create New Drinking Game</h5>
 
-                <form>
+                <hr class="mx-auto mb-4" style="opacity: 1; width: 40%">
+
+                <form novalidate>
                     <div id="players" class="row g-2 mb-4">
                         <div class="col-6">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Player" aria-label="Player" aria-describedby="button-player1">
+                                <input type="text" name="player1" class="form-control border-dark bg-light bg-opacity-50" aria-label="Player" placeholder="Player 1" aria-describedby="button-player1" required>
                                 <button class="btn btn-outline-dark" type="button" id="button-player1" disabled><i class="bi bi-person-x"></i></button>
                             </div>
                         </div>
 
                         <div class="col-6">
                             <div class="input-group">
-                                <input type="text" name="player2" class="form-control" placeholder="Player" aria-label="Player" aria-describedby="button-player2">
+                                <input type="text" name="player2" class="form-control border-dark bg-light bg-opacity-50" aria-label="Player" placeholder="Player 2" aria-describedby="button-player2" required>
                                 <button class="btn btn-outline-dark" type="button" id="button-player2" disabled><i class="bi bi-person-x"></i></button>
                             </div>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-dark float-end">Start game</button>
-                    <button type="button" class="btn btn-outline-dark float-end me-2" onclick="addPlayerFormElement()"><i class="bi bi-person-add"></i></button>
+                    <small class="text-danger" id="players-error" style="display: none;">Please add at least 2 players</small>
+
+                    <button type="submit" class="btn btn-dark float-end"><i class="bi bi-play-fill"></i> Start game</button>
+                    <button type="button" id="players-add" class="btn btn-outline-dark float-end me-2" onclick="addPlayerFormElement()"><i class="bi bi-person-add"></i></button>
                 </form>
             </div>
-        </div>
-    </div>
 
-    {{!-- {{> partials/footer}} --}}
+            <div class="card-footer text-muted text-center bg-transparent">
+                <a href="/games" class="btn btn-link"><i class="bi bi-joystick"></i> View all games</a>
+            </div>
+        </div>
+
+        <div class="card col-12 col-md-8 col-lg-6 border-0 bg-light" style="--bs-bg-opacity: .75; display: none;">
+            <div class="card-body" style="height: 150px;">
+                <h5 class="card-title mb-4 text-center"></h5>
+            </div>
+
+            <div class="card-footer border-0 bg-transparent">
+                <button type="button" class="btn btn-outline-danger"><i class="bi bi-fast-forward-fill"></i> Skip</button>
+                <button type="button" onclick="nextQuestion(this)" class="btn btn-dark float-end"><i class="bi bi-arrow-right"></i> Next</button>
+            </div>
+        </div>
+
+        <div class="card col-12 col-md-8 col-lg-6 border-0 bg-light" style="--bs-bg-opacity: .75; display: none;">
+            <div class="card-body" style="height: 150px;">
+                <h5 class="card-title mb-4 text-center">Congratulations!</h5>
+            </div>
+
+            <div class="card-footer border-0 bg-transparent">
+                <button type="button" onclick="newGame()" class="btn btn-dark float-end"><i class="bi bi-controller"></i> New Game</button>
+            </div>
+        </div>
+
+        <footer class="footer position-absolute bottom-0 mb-2">
+            <small class="text-light">© <span id="spanYear"></span> Thomas Koeppe</small>
+        </footer>
+    </div>
 </body>
 
 </html>
