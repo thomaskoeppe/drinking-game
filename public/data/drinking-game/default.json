@@ -1,44 +1,27 @@
 [
     {
         "question": "<strong>$player$</strong>, what is the most embarrassing thing that has ever happened to you?",
-        "penalty": {
-            "target": "self",
-            "type": "drink",
-            "amount": 1
-        }
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": "2"
     },
     {
         "question": "<strong>$player$</strong>, tell us about your first kiss",
-        "penalty": {
-            "target": "self",
-            "type": "drink",
-            "amount": 1
-        }
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": "2"
     },
     {
         "question": "<strong>$player$</strong>, don't say <strong>yes or no</strong> for the <strong>next 3 questions</strong>",
-        "penalty": {
-            "target": "self",
-            "type": "drink",
-            "repeat": true,
-            "amount": 1
-        }
+        "answer": "If $player$ says <strong>yes or no</strong>, they must <strong>drink $amount$ sips</strong>",
+        "amount": "2"
     },
     {
         "question": "<strong>$player$</strong>, ask <strong>$target$</strong> any question you want",
+        "answer": "If $target$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
         "target": true,
-        "penalty": {
-            "target": "target",
-            "type": "drink",
-            "amount": 1
-        }
+        "amount": "2"
     },
     {
         "question": "<strong>Everyone</strong>, <strong>take $amount$ drinks</strong> if you have ever been in a fight",
-        "penalty": {
-            "target": "all",
-            "type": "drink",
-            "amount": 1
-        }
+        "amount": "2"
     }
 ]

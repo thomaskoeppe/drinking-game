@@ -16,3 +16,16 @@ body.gradient {
 		background-position: 0% 50%;
 	}
 }
+
+.table > :not(caption) > * > * {
+	background-color: transparent;
+}
+
+#tsparticles {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}

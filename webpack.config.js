@@ -122,7 +122,7 @@ export default {
     // Include jQuery
     new webpack.ProvidePlugin({
       $: 'jquery',
-      jQuery: 'jquery',
+      jQuery: 'jquery'
     }),
 
     // new FaviconsWebpackPlugin({
