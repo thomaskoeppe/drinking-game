@@ -6,7 +6,8 @@
     "scripts": {
         "build": "webpack --config webpack.config.js --mode production",
         "dev": "webpack-dev-server --open --config webpack.config.js --mode development",
-        "images": "node ./bin/images.js"
+        "images": "node ./bin/images.js",
+        "deploy": "gh-pages -d public"
     },
     "type": "module",
     "author": "Jeremy Caris",
@@ -29,6 +30,7 @@
         "fast-glob": "^3.2.12",
         "favicons": "^7.1.5",
         "favicons-webpack-plugin": "^6.0.1",
+        "gh-pages": "^6.1.1",
         "handlebars-loader": "^1.7.3",
         "html-webpack-plugin": "^5.5.0",
         "jquery": "^3.7.1",
