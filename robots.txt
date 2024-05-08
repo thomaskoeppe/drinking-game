@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow:
+Sitemap: https://mywebsite.com/sitemap.xml
+Host: https://mywebsite.com

@@ -1,0 +1,94 @@
+[
+    {
+        "question": "<strong>$player$</strong>, what is the most embarrassing thing that has ever happened to you?",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, tell us about your first kiss",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, don't say <strong>yes or no</strong> for the <strong>next 3 questions</strong>",
+        "answer": "If $player$ says <strong>yes or no</strong>, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, ask <strong>$target$</strong> any question you want",
+        "answer": "If $target$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "target": true,
+        "amount": 2
+    },
+    {
+        "question": "<strong>Everyone</strong>, <strong>take $amount$ drinks</strong> if you have ever been in a fight",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, what is your favorite childhood memory?",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, tell us about your most embarrassing moment in school",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, what is the craziest thing you have ever done?",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, tell us about your first crush",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>Everyone</strong>, <strong>take $amount$ drinks</strong> if you have ever been in love",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, what is the most embarrassing thing that has ever happened to you in public?",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, tell us about your first date",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, what is the most embarrassing thing that has ever happened to you in front of your crush?",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>Everyone</strong>, <strong>take $amount$ drinks</strong> if you have ever been cheated on",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, what is the most embarrassing thing that has ever happened to you in a relationship?",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, tell us about your first heartbreak",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, what is the most embarrassing thing that has ever happened to you in bed?",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    },
+    {
+        "question": "<strong>Everyone</strong>, <strong>take $amount$ drinks</strong> if you have ever been dumped",
+        "amount": 2
+    },
+    {
+        "question": "<strong>$player$</strong>, what is the most embarrassing thing that has ever happened to you on a date?",
+        "answer": "If $player$ doesn't want to answer, they must <strong>drink $amount$ sips</strong>",
+        "amount": 2
+    }
+]
