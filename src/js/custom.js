@@ -1,5 +1,6 @@
 let _PLAYERS = {};
 let _QUESTIONS = {};
+let currentPlayer = null;
 
 console.log(`Hello ${process.env.HELLO}`);
 
@@ -66,12 +67,27 @@ const replaceStringPlaceholders = (str, c) => {
     return parts.join('');
 }
 
-const nextQuestion = (element) => {
+const nextQuestion = (element, skipped = false) => {
     const question = getRandomQuestion();
     const player = getRandomPlayer(-1);
 
+    if (currentPlayer) {
+        currentPlayer.skipped = skipped ? currentPlayer.skipped + 1 : currentPlayer.skipped;
+    }
+
+    currentPlayer = null;
+
     if (!question) {
         $('.card').eq(1).fadeOut(1000, () => {
+            $('table tbody').html(`
+                ${Object.keys(_PLAYERS).map((key) => `
+                    <tr>
+                        <td>${_PLAYERS[key].name}</td>
+                        <td>${_PLAYERS[key].skipped}</td>
+                    </tr>
+                `).join('')}
+            `);
+
             $('.card').last().fadeIn(1000);
 
             tsParticles.load({
@@ -223,6 +239,8 @@ const nextQuestion = (element) => {
         return;
     }
 
+    currentPlayer = player;
+
     if (element) {
         const card = $(element).closest('.card');
 
@@ -266,6 +284,7 @@ const nextQuestion = (element) => {
 
 const newGame = () => {
     $('.card').last().fadeOut(1000, () => {
+        $("#tsparticles").remove();
         $('.card').first().fadeIn(1000);
     });
 }

@@ -50,8 +50,8 @@
             </div>
 
             <div class="card-footer border-0 bg-transparent">
-                <button type="button" class="btn btn-outline-danger"><i class="bi bi-fast-forward-fill"></i> Skip</button>
-                <button type="button" onclick="nextQuestion(this)" class="btn btn-dark float-end"><i class="bi bi-arrow-right"></i> Next</button>
+                <button type="button" onclick="nextQuestion(this, true)" class="btn btn-outline-danger"><i class="bi bi-fast-forward-fill"></i> Skip</button>
+                <button type="button" onclick="nextQuestion(this, false)" class="btn btn-dark float-end"><i class="bi bi-arrow-right"></i> Next</button>
             </div>
         </div>
 
@@ -66,16 +66,7 @@
                             <th class="col-6">Skipped Cards</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Simon</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Lanka</td>
-                            <td>4</td>
-                        </tr>
-                    </tbody>
+                    <tbody></tbody>
                 </table>
             </div>
 
